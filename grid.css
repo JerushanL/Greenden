@@ -1,0 +1,88 @@
+
+html {
+    font-size: 16px;
+}
+body {
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+}
+.container {
+    background-color: rgb(168, 219, 252);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 150px 200px 110px 100px ;
+    grid-template-areas: "header header header header"
+                        /* "middle middle middle middle" */
+                        "aside article article article "
+                        "aside article article article "
+                        /* "aside article article article " */
+                        "footer footer footer footer";
+    gap: 20px;
+
+}
+.header {
+    background-color: darkcyan;
+    grid-area: header;
+    display: grid;
+    place-items: center;
+}
+.middle {
+    background-color: yellowgreen;
+    display: grid;
+    place-items: center;
+    grid-area: middle;
+}
+.aside {
+    background-color: rgb(241, 189, 93);
+    display: grid;
+    place-items: center;
+    grid-area: aside;
+}
+.article {
+    background-color: rgb(70, 57, 255);
+    display: grid;
+    place-items: center;
+    grid-area: article;
+    position: relative;
+}
+.image1 {
+    background-color: rgb(252, 110, 245);
+    display: grid;
+    place-items: center;
+    grid-area: image;
+    height: 120px;
+    width: 120px;
+    grid-column: 1 /2;
+    grid-row: 4;
+
+}.image2 {
+    background-color: rgb(252, 110, 245);
+    display: grid;
+    place-items: center;
+    grid-area: image;
+    height: 120px;
+    width: 120px;
+    bottom: 10px;
+    grid-column: 2;
+    grid-row: 4;
+
+}
+.image3 {
+    background-color: rgb(252, 110, 245);
+    display: grid;
+    place-items: center;
+    grid-area: image;
+    height: 120px;
+    width: 120px;
+    grid-column: 3;
+    grid-row: 4;
+
+}
+.footer {
+    background-color: darkcyan;
+    display: grid;
+    place-items: center;
+    grid-area: footer;
+}
