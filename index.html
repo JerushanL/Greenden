@@ -14,7 +14,7 @@
     <nav class="bg-green-100 p-4 flex justify-between items-center shadow-lg sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg  id="navicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -25,6 +25,17 @@
             <li><a href="contact.html" class="hover:underline pl-4">Contact</a></li>
         </ul>
     </nav>
+    <!-- Side navbar -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0 mt-2 transition-all duration-700" style="width: 30%; height: 100vh; right:-30% ;">
+        <div class="text-right pr-4 pb-2 mt-3">
+            <p id="close-nav" class="inline cursor-pointer ">X</p>
+        </div>
+        <ul class="flex flex-col gap-y-10 items-center text-gray-600">
+            <li><a href="index.html" class="hover:underline pl-4" >Home</a></li>
+            <li><a href="product.html" target="_blank" class="hover:underline pl-4">Product</a></li>
+            <li><a href="contact.html" class="hover:underline pl-4">Contact</a></li>
+        </ul>
+    </section>
     <!-- Header  -->
     <section class="bg-green-100 p-4 flex justify-center">
         <div>
@@ -137,4 +148,5 @@
     <p class="mt-6">The Standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interest.</p>
     <p class="mt-6">&copy; 2024 Greenday.com</p>
 </footer>
+ <script src="index.js"></script>
 </body>
