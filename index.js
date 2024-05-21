@@ -8,6 +8,6 @@
  })
 
  close.addEventListener("click",function(){
-    sideNav.style.right="-30%"
+    sideNav.style.right="-40%"
  })
     
